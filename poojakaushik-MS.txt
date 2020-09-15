@@ -1,0 +1,73 @@
+http://localhost:8000/h2-console/login.do?jsessionid=ddc5dfd286fd6c3d0b06791871dce89c
+
+jdbc:h2:mem:testdb - connect to DB
+
+http://localhost:8000/currency-exchange-value/from/USD/to/INR
+
+https://github.com/PoojaKaushik-ibm/MSbootcamp
+
+http://localhost:8888/limits-service/qa
+
+http://localhost:8180/limits
+
+
+https://github.com/PoojaKaushik-ibm/MSbootcamp
+
+http://localhost:8765/{apllication-name}/{uri}
+http://localhost:8765/currency-exchange-server/currency-exchange/from/USD/to/INR/
+
+https://github.com/PoojaKaushik-ibm/MSbootcamp.git
+https://github.com/PoojaKaushik-ibm/CaseStudy.git
+
+echo "# CaseStudy" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/PoojaKaushik-ibm/CaseStudy.git
+git push -u origin master
+
+
+
+working URLs:
+==================
+
+RABBIT_URI=amqp://localhost
+java -jar zipkin-server-2.5.2-exec.jar
+java -jar zipkin-server-2.21.7-exec.jar
+
+http://localhost:9411/zipkin/
+
+http://localhost:8080/actuator
+
+Limits Service
+http://localhost:8080/limits POST -> http://localhost:8080/actuator/refresh
+Spring Cloud Config Server
+http://localhost:8888/limits-service/default 
+http://localhost:8888/limits-service/dev
+
+http://localhost:8080/limits
+
+currency conversion:
+http://localhost:8100/currency-converter/from/INR/to/USD/amount/100
+using feign:
+http://localhost:8100/currency-converter-feign/from/USD/to/INR/amount/10
+
+to get currency exchange value:
+http://localhost:8001/currency-exchange-value/from/USD/to/INR
+
+http://localhost:8000/get-all-factors
+
+http://localhost:8000/add_exchange_detail
+
+http://localhost:8000/update-exchange-value/from/INR/to/USD/conversionFactor/200/ - POST it in postman
+http://localhost:8000/add-factor/id/104/from/INR/to/YEN/conversionFactor/20/ - POST it in postman
+
+zuul api gateway:
+http://localhost:8765/currency-exchange-service/currency-exchange-value/from/USD/to/INR
+http://localhost:8765/currency-conversion-service/currency-converter-feign/from/USD/to/INR/amount/100
+
+eureka
+http://localhost:8761
+hystrix
+http://localhost:8080/actuator/bus-refresh
+
