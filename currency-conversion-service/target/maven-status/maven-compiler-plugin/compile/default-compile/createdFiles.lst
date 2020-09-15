@@ -1,0 +1,4 @@
+com\microservices\currencyconversionservice\CurrencyConversionServiceApplication.class
+com\microservices\currencyconversionservice\CurrencyConversionBean.class
+com\microservices\currencyconversionservice\CurrencyConversionController.class
+com\microservices\currencyconversionservice\CurrencyExchangeServiceProxy.class
