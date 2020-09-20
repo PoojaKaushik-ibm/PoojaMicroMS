@@ -58,6 +58,20 @@ public class CurrencyExchangeController {
 	public List<ExchangeValue> getAllConversionFactor() {
 		return repository.findAll();
 	}
+	
+	//addConversionFactor
+	@PutMapping(path = "/add-factor/id/{id}/from/{from}/to/{to}/conversionFactor/{conversionFactor}")
+	public ExchangeValue addExchangeValue(@PathVariable Long id , @PathVariable String from, @PathVariable String to, @PathVariable BigDecimal conversionFactor ) {
+		ExchangeValue exchangeValue =  new ExchangeValue();
+		
+		exchangeValue.setId(id);
+		exchangeValue.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
+		exchangeValue.setConversionFactor(conversionFactor);
+		exchangeValue.setFrom(from);
+		exchangeValue.setTo(to);
+		logger.info("{}", exchangeValue);
+		return repository.save(exchangeValue);
+	}	
 
 	@PostMapping(value = "/add_exchange_detail")
     public ResponseEntity<?> addConversionFactor(@RequestBody ExchangeValue cf) {
@@ -66,5 +80,6 @@ public class CurrencyExchangeController {
       repository.save(cf);
       return ResponseEntity.ok("Factor Saved !");
   }
+	
 	
 }
