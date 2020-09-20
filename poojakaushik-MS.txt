@@ -37,7 +37,7 @@ java -jar zipkin-server-2.21.7-exec.jar
 
 http://localhost:9411/zipkin/
 
-http://localhost:8080/actuator
+http://localhost:8180/actuator
 
 Limits Service
 http://localhost:8080/limits POST -> http://localhost:8080/actuator/refresh
